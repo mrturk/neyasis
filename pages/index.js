@@ -4,14 +4,25 @@ import RightArrowIcon from "@/public/assets/icons/RightArrowIcon";
 import { getJsonPlaceHolderTodos } from "@/services/JsonPlaceHolder";
 import { getSampleData } from "@/store/actions/sampleAction";
 import styles from "@/styles/Home.module.css";
-import {
-  useCallback,
-  useEffect,
-  useLayoutEffect,
-  useRef,
-  useState,
-} from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+
+const images = [
+  "img/1-acibadem.png",
+  "img/2-akbank.png",
+  "img/3-akcansa.png",
+  "img/4-akkim.png",
+  "img/5-akkok.png",
+  "img/7-aktif-bank.png",
+  "img/8-allianz.png",
+  "img/9-anadolu-sigorta.png",
+  "img/10-anel-grup.png",
+  "img/arc-elik.png",
+  "img/1280-px-bsh-bosch-und-siemens-hausgera-te-logo-svg-copy.png",
+  "img/bezmia-lem-vak-f-u-niversitesi-logosu.png",
+  "img/ronesans-holding.png",
+  "img/1280-px-tav-airports-holding-logo-svg.png",
+];
 
 export default function Home() {
   const [data, setData] = useState();
@@ -428,21 +439,25 @@ export default function Home() {
         </section>
         <section className={styles.sectinThree}>
           <div className={styles.sectinThreeContent}>
-            {[...Array(7)].map((item, index) => {
-              return (
-                <div key={index} className={styles.sectinThreeBox}>
-                  <img src="assets/img/1280-px-akbank-logo-svg.png" />
-                </div>
-              );
+            {images.map((item, index) => {
+              if (index <= 6) {
+                return (
+                  <div key={index} className={styles.sectinThreeBox}>
+                    <img src={`assets/${item}`} />
+                  </div>
+                );
+              }
             })}
           </div>
           <div className={styles.sectinThreeContent}>
-            {[...Array(7)].map((item, index) => {
-              return (
-                <div key={index} className={styles.sectinThreeBox}>
-                  <img src="assets/img/1280-px-akbank-logo-svg.png" />
-                </div>
-              );
+            {images.map((item, index) => {
+              if (index > 6) {
+                return (
+                  <div key={index} className={styles.sectinThreeBox}>
+                    <img src={`assets/${item}`} />
+                  </div>
+                );
+              }
             })}
           </div>
         </section>
