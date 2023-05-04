@@ -25,3 +25,37 @@ function DocIcon({ ...props }) {
 }
 
 export default DocIcon;
+
+
+export function DocXIcon({ ...props }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <defs>
+        <path
+          id="path-1"
+          d="M13.333 7.313V2H5c-.554 0-1 .418-1 .938v18.125c0 .519.446.937 1 .937h14c.554 0 1-.418 1-.938V8.25h-5.667c-.55 0-1-.422-1-.938zM20 6.761V7h-5.333V2h.254c.267 0 .52.098.708.273l4.08 3.829a.906.906 0 01.291.66z"
+        ></path>
+      </defs>
+      <g fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
+        <g transform="translate(-150 -995)">
+          <g transform="translate(150 951)">
+            <g transform="translate(0 44)">
+              <path d="M0 0L24 0 24 24 0 24z"></path>
+              <mask fill="#fff">
+                <use xlinkHref="#path-1"></use>
+              </mask>
+              <use fill="#808285" fillRule="nonzero" xlinkHref="#path-1"></use>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  );
+}

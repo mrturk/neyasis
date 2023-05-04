@@ -1,5 +1,5 @@
 import CloseIcon from "@/public/assets/icons/CloseIcon";
-import DocIcon from "@/public/assets/icons/DocIcon";
+import DocIcon, { DocXIcon } from "@/public/assets/icons/DocIcon";
 import styles from "@/styles/ProfileInfoOther.module.css";
 
 const ProfileInfoOther = ({ title, icon, data, edit }) => {
@@ -18,7 +18,14 @@ const ProfileInfoOther = ({ title, icon, data, edit }) => {
               <div
                 style={{ display: "flex", flexDirection: "row", gap: "16px" }}
               >
-                <div>{icon}</div>
+                {item.includes("docx") ? (
+                  <div>
+                    <DocXIcon />
+                  </div>
+                ) : (
+                  <div>{icon}</div>
+                )}
+
                 <div>
                   <span className={styles.text}>{item}</span>
                 </div>

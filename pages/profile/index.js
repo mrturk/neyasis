@@ -9,7 +9,16 @@ import DocIcon from "@/public/assets/icons/DocIcon";
 import DownloadIcon from "@/public/assets/icons/DownloadIcon";
 import EditIcon from "@/public/assets/icons/EditIcon";
 import HardDriveIcon from "@/public/assets/icons/HardDriveIcon";
-import MediaIcon from "@/public/assets/icons/MediaIcon";
+import {
+  BehaceIcon,
+  FaceBookIcon,
+  GitHubIcon,
+  LinkedInIcon,
+  ShapeIcon,
+  TwitterIcon,
+  WebDesignIcon,
+  WebIcon,
+} from "@/public/assets/icons/MediaIcon";
 import SaveSearchIcon from "@/public/assets/icons/SaveSearchIcon";
 import styles from "@/styles/Profile.module.css";
 
@@ -143,13 +152,30 @@ const Index = () => {
                 <span className={styles.infoTitle}>Web Sitesi</span>
               </div>
               <ul>
-                {[...Array(8)].map((item, index) => {
-                  return (
-                    <li key={index}>
-                      <MediaIcon />
-                    </li>
-                  );
-                })}
+                <li>
+                  <LinkedInIcon />
+                </li>
+                <li>
+                  <GitHubIcon />
+                </li>
+                <li>
+                  <ShapeIcon />
+                </li>
+                <li>
+                  <BehaceIcon />
+                </li>
+                <li>
+                  <WebDesignIcon />
+                </li>
+                <li>
+                  <FaceBookIcon />
+                </li>
+                <li>
+                  <TwitterIcon />
+                </li>
+                <li>
+                  <WebIcon />
+                </li>
               </ul>
               <div>
                 <a href="" className={styles.editProfileHref}>

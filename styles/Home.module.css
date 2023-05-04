@@ -435,6 +435,8 @@
   color: #fff;
 }
 
+
+
 @media only screen and (max-width: 475px) {
 .footer{
   padding: 20px;
@@ -451,6 +453,7 @@
 .nextButton{display: none;}
 
 }
+
 
 @media only screen and (max-width: 992px) {
   .login{
@@ -495,6 +498,9 @@
   }
   .titleWrap{
     text-align: center;
+  }
+  .headerBar{
+    padding: 20px;
   }
 }
 
