@@ -6,6 +6,7 @@ import ProfileInfoOther from "@/components/ProfileInfoOther";
 import ProfileOther from "@/components/ProfileOther";
 import SearchBox from "@/components/SearchBox";
 import DocIcon from "@/public/assets/icons/DocIcon";
+import DownloadIcon from "@/public/assets/icons/DownloadIcon";
 import EditIcon from "@/public/assets/icons/EditIcon";
 import HardDriveIcon from "@/public/assets/icons/HardDriveIcon";
 import MediaIcon from "@/public/assets/icons/MediaIcon";
@@ -111,10 +112,22 @@ const Index = () => {
                   <span className={styles.text}>+90 555 66 44</span>
                 </div>
               </div>
-              <div style={{ marginBottom: "16px" }}>
-                <a href="" className={styles.findCvHref}>
-                  Find CV’mi İndir
-                </a>
+              <div
+                style={{
+                  marginBottom: "16px",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "5px",
+                }}
+              >
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <DownloadIcon />
+                </div>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <a href="" className={styles.findCvHref}>
+                    Find CV’mi İndir
+                  </a>
+                </div>
               </div>
               <div>
                 <a href="" className={styles.editProfileHref}>
