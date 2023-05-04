@@ -127,28 +127,6 @@ const Index = () => {
           <div className={styles.flexBox}>
             <div id="website-info" className={styles.webSiteInfo}>
               <div>
-                <span className={styles.infoTitle}>Web Sitesi</span>
-              </div>
-              <ul>
-                {[...Array(8)].map((item, index) => {
-                  return (
-                    <li key={index}>
-                      <MediaIcon />
-                    </li>
-                  );
-                })}
-              </ul>
-              <div>
-                <a href="" className={styles.editProfileHref}>
-                  Düzenle
-                </a>
-              </div>
-              <div className={styles.dividerLeft} />
-            </div>
-          </div>
-          <div className={styles.flexBox}>
-            <div id="website-info" className={styles.webSiteInfo}>
-              <div>
                 <span className={styles.infoTitle}>Dokümanlar</span>
               </div>
               <ul>
