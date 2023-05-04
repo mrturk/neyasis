@@ -127,7 +127,7 @@ const Index = () => {
           <div className={styles.flexBox}>
             <div id="website-info" className={styles.webSiteInfo}>
               <div>
-                <span className={styles.infoTitle}>Dokümanlar</span>
+                <span className={styles.infoTitle}>Web Sitesi</span>
               </div>
               <ul>
                 {[...Array(8)].map((item, index) => {
