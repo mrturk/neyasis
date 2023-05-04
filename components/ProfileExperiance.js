@@ -8,7 +8,7 @@ const ProfileExperiance = ({
   description,
 }) => {
   return (
-    <div style={{ marginBottom: "20px" }}>
+    <div>
       <div style={{ marginBottom: "5px" }}>
         <span className={styles.title}>{title}</span>
       </div>

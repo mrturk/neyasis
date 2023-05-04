@@ -81,7 +81,6 @@
   .container{
     background: url("../public//assets/img/group-13.png") left -100px no-repeat,url("../public//assets/img/group-19.png") right top no-repeat,url("../public//assets/img/group-12.png") left bottom no-repeat;
     padding: 42px 150px 42px 150px;
-    min-height: 100vh;
     display: flex;
     flex: 1;
     gap: 100px;
@@ -98,12 +97,15 @@
   }
   .containerRightBox{
     width: 100%;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 
   .profilePictureEdit{
+    position: relative;
    width: 260px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 260px;
     border-radius: 12px;
     border: solid 1px #4361ee;
@@ -159,7 +161,6 @@
     color: #4361ee;
   }
   .dividerLeft{
-    max-width: 260px;
     margin-top: 29.5px;
     margin-bottom: 29.5px;
     border: solid 1px rgba(107, 121, 152, 0.3);
@@ -205,6 +206,128 @@
     color: #6b7998;
   }
 
+  .footer{
+    display: flex;
+    flex: 1;
+    padding: 30px 150px;
+    background-color: #626160;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 50px;
+  }
+  .footerRight{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footerRightContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footerLeft{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footerLeftContent{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+  }
+  .footerLeftList{
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  .footerLeftContentTitleWrap{
+    display: flex;
+    align-items: center;
+  }
+  .footerLeftContentTitle{
+    font-family: MarkPro;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .footerLeftList li{
+    font-family: MarkPro;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+    border-right: 1px;
+    position: relative;
+    padding-right: 23px;
+  }
+  
+  .footerLeftList li::before{
+    position: absolute;   
+  
+    width: 1px;
+    height: 20px;
+    margin: 0 -12px;
+    border-radius: 0.5px;
+    background-color: rgba(255, 255, 255, 0.3);
+      display: inline-block;
+      content: "";
+  }
+  
+  .footerLeftList li:first-child::before{
+    display: none;
+  }
+  .footerLeftIskur{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .footerLeftIskur p{
+    max-width: 450px;
+    font-family: MarkPro;
+    font-size: 8px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: #fff;
+  }
+  .footerSelect{
+    background-color: transparent;
+    border: 0;
+    font-family: MarkPro;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+  }
+  
+  .footerSelect option{
+     font-family: MarkPro;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+  }
+
   @media only screen and (max-width: 650px) {
     .flexBoxProfile{
       flex-direction: column !important;
@@ -215,6 +338,7 @@
     .containerLeft{
       flex-direction: column !important;
     }
+
   }
 
   @media only screen and (max-width: 1200px) {
@@ -242,6 +366,31 @@
       gap: 20px;
       padding-top: 10px;
       padding-bottom: 10px;
+    }
+    .footer{
+      flex-direction: column;
+    }
+    .footerLeftList{
+      flex-wrap: wrap;
+    }
+    .footerLeftContent{
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footerRightContent{
+      flex-direction: column-reverse;
+    }
+    .footerLeftList li::before{
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 475px) {
+    .footer{
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
   }
 
