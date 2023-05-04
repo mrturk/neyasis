@@ -1,0 +1,59 @@
+.title{
+    font-family: Nunito;
+    font-size: 24px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4361ee;
+}
+.companyTitle{
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4361ee;
+}
+.date{
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #6b7998;  
+}
+
+.location{
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #6b7998;
+}
+
+.description{
+    padding-right: 40px;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #6b7998;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
