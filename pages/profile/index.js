@@ -22,7 +22,7 @@ import {
 import SaveSearchIcon from "@/public/assets/icons/SaveSearchIcon";
 import styles from "@/styles/Profile.module.css";
 
-const ProfilePage = () => {
+const Index = () => {
   return (
     <main>
       <header id="header">
@@ -327,4 +327,4 @@ const ProfilePage = () => {
     </main>
   );
 };
-export default ProfilePage;
+export default Index;
