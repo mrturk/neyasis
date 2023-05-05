@@ -242,6 +242,7 @@
     list-style: none;
     padding: 0;
     display: flex;
+    padding-left: 5px;
   }
   .footerLeftContentTitleWrap{
     display: flex;
