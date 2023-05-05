@@ -106,7 +106,7 @@
   height: 50px;
   padding: 15px 26px 15px 30px;
   border-radius: 28px;
-  border: solid 1px rgba(191, 191, 191, 0.7);
+  border: 1px solid rgba(191, 191, 191, 0.7);
   background-color: #e9e9e9;
   position: relative;
 }
