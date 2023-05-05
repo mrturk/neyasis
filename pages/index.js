@@ -132,7 +132,7 @@ export default function Home() {
             </button>
             <button className={styles.popularSearchButton}>
               <span className={styles.populerSearchButtonSpan}>
-                UX designer
+                UI designer
               </span>
             </button>
             <button className={styles.popularSearchButton}>
