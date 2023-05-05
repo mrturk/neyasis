@@ -108,7 +108,28 @@
   border-radius: 28px;
   border: solid 1px rgba(191, 191, 191, 0.7);
   background-color: #e9e9e9;
+  position: relative;
 }
+
+
+.popularSearchButtonList button:last-child::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgba(238, 238, 238, 0), #f7f8fa 86%);
+  border-radius: 28px;
+}
+
+.popularSearchButtonList button:last-child{
+  background: linear-gradient(#e9e9e9, #e9e9e9) padding-box, linear-gradient(to right, rgba(191, 191, 191, 0.7), #f7f8fa 100%) border-box;
+  border-radius: 28px;
+  border: 1px solid transparent;
+}
+
+
 
 .popularSearch{
   font-family: MarkPro;
